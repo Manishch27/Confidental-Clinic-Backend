@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 // Configure CORS
 
 app.use(cors({
-    origin: 'http://localhost:3001',
+    origin: '*',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }));
